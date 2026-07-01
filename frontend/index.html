@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TextInsight AI</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+
+            <h1>🧠 TextInsight AI</h1>
+
+            <p>Powered by Azure AI Language</p>
+
+        </header>
+
+        <textarea id="text" placeholder="Paste any text, review, email or document here..."></textarea>
+
+        <div class="button-group">
+
+            <button onclick="analyzeText()">
+                🚀 Analyze Text
+            </button>
+
+            <button class="clear-btn" onclick="clearText()">
+                🗑 Clear
+            </button>
+
+        </div>
+
+        <div id="loading" class="loading">
+
+            <div class="spinner"></div>
+
+            <p>Analyzing with Azure AI...</p>
+
+        </div>
+
+        <div id="results"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
